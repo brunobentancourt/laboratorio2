@@ -298,3 +298,180 @@ DEF_COL_A5:
     sbrs BYTE_PATRON, 0
     cbi PORTC, 5
     ret
+
+VERIFICAR_UART:
+    lds TEMP, UCSR0A
+    sbrs TEMP, RXC0
+    ret
+
+    lds TEMP, UDR0
+
+    cpi TEMP, '+'
+    breq AUMENTAR_VELOCIDAD
+    cpi TEMP, '-'
+    breq DISMINUIR_VELOCIDAD
+
+    cpi TEMP, '0'
+    brlo UART_FIN
+    cpi TEMP, '7'
+    brsh UART_FIN
+
+    subi TEMP, '0'
+    mov MODO, TEMP
+
+    tst MODO
+    brne UART_FIN
+    clr PUNT_MENSAJE
+    rcall LIMPIAR_BUFF_FILAS
+    rjmp UART_FIN
+
+AUMENTAR_VELOCIDAD:
+    cpi VAL_VELOCIDAD, 30
+    brlo UART_FIN
+    subi VAL_VELOCIDAD, 20
+    ret
+
+DISMINUIR_VELOCIDAD:
+    cpi VAL_VELOCIDAD, 230
+    brsh UART_FIN
+    ldi TEMP, 20
+    add VAL_VELOCIDAD, TEMP
+    ret
+
+UART_FIN:
+    ret
+
+IMPRIMIR_MENU_UART:
+    ldi TEMP, (1<<TXC0)
+    sts UCSR0A, TEMP
+
+    ldi ZL, LOW(TEXTO_MENU * 2)
+    ldi ZH, HIGH(TEXTO_MENU * 2)
+
+BUCLE_ENVIAR_MENU:
+    lpm TEMP, Z+
+    tst TEMP
+    breq FIN_MENU
+
+ESPERAR_TX:
+    lds R0, UCSR0A
+    sbrs R0, UDRE0
+    rjmp ESPERAR_TX
+
+    sts UDR0, TEMP
+    rjmp BUCLE_ENVIAR_MENU
+
+FIN_MENU:
+ESPERAR_TX_COMPLETO:
+    lds R0, UCSR0A
+    sbrs R0, TXC0
+    rjmp ESPERAR_TX_COMPLETO
+
+    lds TEMP, UCSR0B
+    cbr TEMP, (1<<TXEN0)
+    sts UCSR0B, TEMP
+
+    ldi TEMP, 0xFE
+    out DDRD, TEMP
+    ret
+
+VERIFICAR_BOTONES:
+    in TEMP, PINC
+
+    sbrs TEMP, 3
+    rjmp BOTON_SIGUIENTE
+
+    sbrs TEMP, 4
+    rjmp BOTON_ANTERIOR
+
+    clr ESTADO_BOTON
+    ret
+
+BOTON_SIGUIENTE:
+    sbrc ESTADO_BOTON, 0
+    ret
+    ori ESTADO_BOTON, 0x01
+
+    inc MODO
+    cpi MODO, 7
+    brne BOTON_FIN
+    clr MODO
+    rcall LIMPIAR_BUFF_FILAS
+    clr PUNT_MENSAJE
+    rjmp BOTON_FIN
+
+BOTON_ANTERIOR:
+    sbrc ESTADO_BOTON, 1
+    ret
+    ori ESTADO_BOTON, 0x02
+
+    tst MODO
+    breq MODO_MAXIMO
+    dec MODO
+    tst MODO
+    brne BOTON_FIN
+    rcall LIMPIAR_BUFF_FILAS
+    clr PUNT_MENSAJE
+    rjmp BOTON_FIN
+
+MODO_MAXIMO:
+    ldi MODO, 6
+
+BOTON_FIN:
+    rcall RETARDO_20MS
+    ret
+
+RETARDO_1MS:
+    ldi CONT_RETARDO, 250
+BUCLE_R1:
+    nop
+    nop
+    dec CONT_RETARDO
+    brne BUCLE_R1
+    ret
+
+RETARDO_20MS:
+    push R23
+    ldi R23, 20
+BUCLE_R20_EXT:
+    rcall RETARDO_1MS
+    dec R23
+    brne BUCLE_R20_EXT
+    pop R23
+    ret
+
+TEXTO_MENU:
+    .db "0: Mensaje (HELLO WORLD)", 13, 10
+    .db "1: Figura 1 (Carita feliz)", 13, 10
+    .db "2: Figura 2 (Carita guino)", 13, 10
+    .db "3: Figura 3 (Corazon) ", 13, 10
+    .db "4: Figura 4 (:3)", 13, 10
+    .db "5: Figura 5 (XD)", 13, 10
+    .db "6: Figura 6 (*) ", 13, 10
+    .db "------------------------------------", 13, 10
+    .db "Use '+' o '-' para cambiar velocidad", 13, 10
+    .db "Seleccione una opcion (0-6): ", 0
+
+PATRONES:
+    .db 0x3C, 0x42, 0xA5, 0x81, 0xA5, 0x99, 0x42, 0x3C
+    .db 0x3C, 0x42, 0xA6, 0x81, 0xA5, 0x99, 0x42, 0x3C
+    .db 0x66, 0xFF, 0xFF, 0xFF, 0x7E, 0x3C, 0x18, 0x00
+    .db 0x00, 0x24, 0x00, 0x42, 0x5A, 0x24, 0x00, 0x00
+    .db 0x18, 0x99, 0x5A, 0x3C, 0x3C, 0x5A, 0x99, 0x18
+    .db 0x9E, 0x6A, 0x0A, 0x6A, 0x9E, 0x00, 0x00, 0x00
+
+COLS_TEXTO_MSG:
+    .db 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+    .db 0x7F, 0x08, 0x08, 0x08, 0x7F, 0x00
+    .db 0x7F, 0x49, 0x49, 0x49, 0x41, 0x00
+    .db 0x7F, 0x40, 0x40, 0x40, 0x40, 0x00
+    .db 0x7F, 0x40, 0x40, 0x40, 0x40, 0x00
+    .db 0x3E, 0x41, 0x41, 0x41, 0x3E, 0x00
+    .db 0x00, 0x00, 0x00, 0x00
+    .db 0x7F, 0x20, 0x18, 0x20, 0x7F, 0x00
+    .db 0x3E, 0x41, 0x41, 0x41, 0x3E, 0x00
+    .db 0x7F, 0x09, 0x19, 0x29, 0x46, 0x00
+    .db 0x7F, 0x40, 0x40, 0x40, 0x40, 0x00
+    .db 0x7F, 0x41, 0x41, 0x22, 0x1C, 0x00
+    .db 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+    .db 0xFF, 0x00
