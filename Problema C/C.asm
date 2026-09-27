@@ -314,6 +314,2263 @@ DRAW_CIRCLE:
 
 
 
+	
+; 3: Pentagrama
+
+
+DRAW_PENTAGRAM:
+
+
+
+
+
+    rcall PEN_DOWN
+
+
+	ldi r17, 51
+    rcall MOVE_LEFT
+
+	ldi r17, 2
+    rcall MOVE_DOWN
+
+	ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_DOWN
+
+
+		ldi r17, 2
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_DOWN
+
+	ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_DOWN
+
+	ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_DOWN
+
+		ldi r17, 2
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_DOWN
+
+	ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_DOWN
+
+	ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_DOWN
+
+		ldi r17, 2
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_DOWN
+
+	ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_DOWN
+
+	ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_DOWN
+
+		ldi r17, 2
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_DOWN
+
+	ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_DOWN
+
+	ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_DOWN
+
+		ldi r17, 2
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_DOWN
+
+	ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_DOWN
+
+	ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_DOWN
+
+		ldi r17, 2
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_DOWN
+
+	ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_DOWN
+
+	ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_DOWN
+
+		ldi r17, 2
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_DOWN
+
+	ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_DOWN
+
+	ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_DOWN
+
+		ldi r17, 2
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_DOWN
+
+	ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_DOWN
+
+	ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_DOWN
+
+		ldi r17, 2
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_DOWN
+
+	ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_DOWN
+
+	ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_DOWN
+
+		ldi r17, 2
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_DOWN
+
+	ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_DOWN
+
+	ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_DOWN
+
+		ldi r17, 2
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_DOWN
+
+	ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_DOWN
+
+	ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_DOWN
+
+
+
+
+
+
+		ldi r17, 2
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_DOWN
+
+	ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_DOWN
+
+	ldi r17, 2
+    rcall MOVE_RIGHT
+
+
+
+
+	
+
+
+	; ---------------------------punto 3---------------------------------
+
+
+	ldi r17, 3
+    rcall MOVE_UP
+	
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 2
+    rcall MOVE_UP
+	
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+
+
+
+
+	ldi r17, 3
+    rcall MOVE_UP
+	
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 2
+    rcall MOVE_UP
+	
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 2
+    rcall MOVE_UP
+	
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 3
+    rcall MOVE_UP
+	
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 2
+    rcall MOVE_UP
+	
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 2
+    rcall MOVE_UP
+	
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 3
+    rcall MOVE_UP
+	
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 2
+    rcall MOVE_UP
+	
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 2
+    rcall MOVE_UP
+	
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 3
+    rcall MOVE_UP
+	
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 2
+    rcall MOVE_UP
+	
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 2
+    rcall MOVE_UP
+	
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 3
+    rcall MOVE_UP
+	
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 2
+    rcall MOVE_UP
+	
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 2
+    rcall MOVE_UP
+	
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 3
+    rcall MOVE_UP
+	
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 2
+    rcall MOVE_UP
+	
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 2
+    rcall MOVE_UP
+	
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 3
+    rcall MOVE_UP
+	
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 2
+    rcall MOVE_UP
+	
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 2
+    rcall MOVE_UP
+	
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+
+
+
+
+	ldi r17, 3
+    rcall MOVE_UP
+	
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 1
+    rcall MOVE_UP
+	
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	; ---------------------------punto 4---------------------
+
+
+	ldi r17, 1
+    rcall MOVE_DOWN
+
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 3
+    rcall MOVE_DOWN
+
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+
+
+	ldi r17, 2
+    rcall MOVE_DOWN
+
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 2
+    rcall MOVE_DOWN
+
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 3
+    rcall MOVE_DOWN
+
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+
+
+	ldi r17, 2
+    rcall MOVE_DOWN
+
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 2
+    rcall MOVE_DOWN
+
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 3
+    rcall MOVE_DOWN
+
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+
+	ldi r17, 2
+    rcall MOVE_DOWN
+
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 2
+    rcall MOVE_DOWN
+
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 3
+    rcall MOVE_DOWN
+
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+
+	ldi r17, 2
+    rcall MOVE_DOWN
+
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 2
+    rcall MOVE_DOWN
+
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 3
+    rcall MOVE_DOWN
+
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+
+	ldi r17, 2
+    rcall MOVE_DOWN
+
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 2
+    rcall MOVE_DOWN
+
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 3
+    rcall MOVE_DOWN
+
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+
+	ldi r17, 2
+    rcall MOVE_DOWN
+
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 2
+    rcall MOVE_DOWN
+
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 3
+    rcall MOVE_DOWN
+
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 2
+    rcall MOVE_DOWN
+
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 2
+    rcall MOVE_DOWN
+
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 3
+    rcall MOVE_DOWN
+
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 2
+    rcall MOVE_DOWN
+
+	ldi r17, 1
+    rcall MOVE_LEFT
+
+ldi r17, 3
+    rcall MOVE_DOWN
+
+
+
+	
+
+	
+
+	; ---------------------------punto 5---------------------
+
+
+
+	ldi r17, 2
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_UP
+
+	ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_UP
+
+
+
+
+	ldi r17, 2
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_UP
+
+	ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_UP
+
+	ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_UP
+
+
+	ldi r17, 2
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_UP
+
+	ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_UP
+
+	ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_UP
+
+
+	ldi r17, 2
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_UP
+
+	ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_UP
+
+	ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_UP
+
+
+	ldi r17, 2
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_UP
+
+	ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_UP
+
+	ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_UP
+
+
+	ldi r17, 2
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_UP
+
+	ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_UP
+
+	ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_UP
+
+
+	ldi r17, 2
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_UP
+
+	ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_UP
+
+	ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_UP
+
+
+	ldi r17, 2
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_UP
+
+	ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_UP
+
+	ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_UP
+
+
+	ldi r17, 2
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_UP
+
+	ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_UP
+
+	ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_UP
+
+
+	ldi r17, 2
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_UP
+
+	ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_UP
+
+	ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_UP
+
+
+	ldi r17, 2
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_UP
+
+	ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_UP
+
+	ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_UP
+
+
+	ldi r17, 2
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_UP
+
+	ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_UP
+
+	ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+    rcall MOVE_UP
+
+
+
+	ldi r17, 2
+    rcall MOVE_RIGHT
+
+	ldi r17, 2
+    rcall MOVE_UP
+
+
+
+
+	rcall PEN_UP
+    ret
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; 4: UTEC
+DRAW_UTEC:
+
+
+
+    ; Letra 'U' 
+    rcall PEN_DOWN
+    ldi r17, 5
+    rcall MOVE_DOWN
+
+    ldi r17, 3
+    rcall MOVE_RIGHT
+
+    ldi r17, 5
+    rcall MOVE_UP
+    rcall PEN_UP
+
+    ; Espacio a 'T'
+    ldi r17, 2
+    rcall MOVE_RIGHT
+
+    ; --- Letra 'T' ---
+    rcall PEN_DOWN
+    ldi r17, 4
+    rcall MOVE_RIGHT
+    rcall PEN_UP
+
+    ldi r17, 2
+    rcall MOVE_LEFT
+
+    rcall PEN_DOWN
+    ldi r17, 5
+    rcall MOVE_DOWN
+    rcall PEN_UP
+
+    ; esquina superior izquierda de 'E'
+    ldi r17, 5
+    rcall MOVE_UP
+    ldi r17, 3
+    rcall MOVE_RIGHT
+
+    ; Letra 'E'
+    rcall PEN_DOWN
+    ldi r17, 3
+    rcall MOVE_RIGHT
+    rcall PEN_UP
+
+    ldi r17, 3
+    rcall MOVE_LEFT
+
+    rcall PEN_DOWN
+    ldi r17, 5
+    rcall MOVE_DOWN
+
+    ldi r17, 3
+    rcall MOVE_RIGHT
+    rcall PEN_UP
+
+    ldi r17, 3
+    rcall MOVE_LEFT
+    ldi r17, 2
+    rcall MOVE_UP
+
+    rcall PEN_DOWN
+    ldi r17, 2
+    rcall MOVE_RIGHT
+    rcall PEN_UP
+
+    ; esquina superior derecha de 'C'
+    ldi r17, 4
+    rcall MOVE_UP
+    ldi r17, 4
+    rcall MOVE_RIGHT
+
+    ; Letra 'C' 
+    rcall PEN_DOWN
+    ldi r17, 3
+    rcall MOVE_LEFT
+
+    ldi r17, 5
+    rcall MOVE_DOWN
+
+    ldi r17, 3
+    rcall MOVE_RIGHT
+    rcall PEN_UP
+
+    ret
+
+
+
+
+
+
+
+
+
+	;  POKEMON 
+
+
+
+
+	DRAW_POKEMON:
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+	rcall PEN_DOWN
+    ldi r17, 5
+    rcall MOVE_DOWN
+
+
+
+
+
+
+
+	ldi r17, 2
+	rcall MOVE_LEFT
+
+	 ldi r17, 3
+    rcall MOVE_RIGHT
+
+
+
+
+
+
+
+
+
+
+	
+	ldi r17, 3
+	rcall MOVE_DOWN
+
+	ldi r17, 1
+	rcall MOVE_LEFT
+
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	ldi r17, 1
+	rcall MOVE_LEFT
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	ldi r17, 1
+	rcall MOVE_LEFT
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	ldi r17, 1
+	rcall MOVE_LEFT
+
+	ldi r17, 2
+	rcall MOVE_DOWN
+
+	ldi r17, 1
+	rcall MOVE_LEFT
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	ldi r17, 1
+	rcall MOVE_LEFT
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	ldi r17, 1
+	rcall MOVE_LEFT
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	ldi r17, 1
+	rcall MOVE_LEFT
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	ldi r17, 4
+	rcall MOVE_LEFT
+
+; --------------------------------CODO
+
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	ldi r17, 1
+	rcall MOVE_LEFT
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	ldi r17, 1
+	rcall MOVE_LEFT
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	ldi r17, 1
+	rcall MOVE_LEFT
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	ldi r17, 1
+	rcall MOVE_LEFT
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	ldi r17, 2
+	rcall MOVE_LEFT
+
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	ldi r17, 2
+	rcall MOVE_LEFT
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	ldi r17, 2
+	rcall MOVE_LEFT
+
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	ldi r17, 10
+	rcall MOVE_LEFT
+
+
+
+
+
+
+
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	ldi r17, 2
+	rcall MOVE_LEFT
+
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	ldi r17, 1
+	rcall MOVE_LEFT
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	ldi r17, 1
+	rcall MOVE_LEFT
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	ldi r17, 1
+	rcall MOVE_LEFT
+
+	ldi r17, 2
+	rcall MOVE_DOWN
+
+	ldi r17, 1
+	rcall MOVE_LEFT
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	ldi r17, 1
+	rcall MOVE_LEFT
+
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	ldi r17, 2
+	rcall MOVE_LEFT
+
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	ldi r17, 2
+	rcall MOVE_LEFT
+
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	ldi r17, 3
+	rcall MOVE_LEFT
+
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	ldi r17, 1
+	rcall MOVE_LEFT
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	ldi r17, 2
+	rcall MOVE_LEFT
+
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	ldi r17, 2
+	rcall MOVE_LEFT
+
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	ldi r17, 2
+	rcall MOVE_LEFT
+
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	ldi r17, 1
+	rcall MOVE_LEFT
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	ldi r17, 1
+	rcall MOVE_LEFT
+
+
+	ldi r17, 2
+	rcall MOVE_UP
+
+	ldi r17, 1
+	rcall MOVE_LEFT
+
+	
+
+	ldi r17, 2
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 2
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 2
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 2
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 2
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 3
+	rcall MOVE_DOWN
+
+	 ldi r17, 1
+    rcall MOVE_LEFT
+	
+	;  tres del puño adentro
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 1
+    rcall MOVE_LEFT
+
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_LEFT
+
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_DOWN
+
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 2
+	rcall MOVE_DOWN
+
+	 ldi r17, 1
+    rcall MOVE_LEFT
+
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 2
+    rcall MOVE_LEFT
+
+
+	ldi r17, 2
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_LEFT
+
+
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_DOWN
+
+
+
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 3
+	rcall MOVE_DOWN
+
+	 ldi r17, 2
+    rcall MOVE_LEFT
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_DOWN
+
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 3
+	rcall MOVE_DOWN
+
+	 ldi r17, 2
+    rcall MOVE_LEFT
+
+
+	 ldi r17, 2
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 2
+    rcall MOVE_RIGHT
+
+
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 3
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_LEFT
+
+
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 3
+	rcall MOVE_DOWN
+
+	 ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 2
+	rcall MOVE_DOWN
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 2
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_LEFT
+
+
+
+	ldi r17, 3
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+
+	ldi r17, 5
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 2
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 3
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 2
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 2
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 4
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 2
+    rcall MOVE_RIGHT
+
+
+
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 2
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 3
+	rcall MOVE_DOWN
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+
+	ldi r17, 2
+	rcall MOVE_DOWN
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 1
+    rcall MOVE_LEFT
+
+
+	ldi r17, 2
+	rcall MOVE_DOWN
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 2
+    rcall MOVE_RIGHT
+
+
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+
+
+
+
+	ldi r17, 4
+	rcall MOVE_DOWN
+
+	 ldi r17, 4
+    rcall MOVE_UP
+
+
+
+
+	 ldi r17, 2
+    rcall MOVE_RIGHT
+
+
+	 ldi r17, 2
+    rcall MOVE_LEFT
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 3
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 2
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 2
+    rcall MOVE_RIGHT
+
+	ldi r17, 2
+	rcall MOVE_UP
+
+	 ldi r17, 2
+    rcall MOVE_DOWN
+
+	 ldi r17, 2
+    rcall MOVE_LEFT
+
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 2
+    rcall MOVE_LEFT
+
+	ldi r17, 3
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_DOWN
+
+
+
+	 ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 1
+    rcall MOVE_LEFT
+
+
+	ldi r17, 2
+	rcall MOVE_DOWN
+
+	 ldi r17, 3
+    rcall MOVE_LEFT
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 2
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+
+
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_DOWN
+
+
+
+	ldi r17, 1
+	rcall MOVE_LEFT
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 1
+    rcall MOVE_LEFT
+
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 3
+    rcall MOVE_LEFT
+
+	ldi r17, 2
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+		ldi r17, 2
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+		ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_DOWN
+
+		ldi r17, 1
+	rcall MOVE_LEFT
+
+	 
+	 	ldi r17, 2
+	rcall MOVE_DOWN
+
+	 ldi r17, 3
+    rcall MOVE_LEFT
+
+	ldi r17, 3
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 2
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 4
+    rcall MOVE_RIGHT
+
+
+
+
+
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 2
+	rcall MOVE_DOWN
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	
+	; TERMINE LA VUELTA 
+
+
+
+	rcall PEN_UP
+
+
+
+	 ldi r17, 27
+    rcall MOVE_LEFT
+
+
+	rcall PEN_DOWN
+	
+	
+
+	 ldi r17, 8
+    rcall MOVE_LEFT
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 3
+    rcall MOVE_LEFT
+
+
+
+
+
+
+	rcall PEN_UP
+
+	ldi r17, 2
+	rcall MOVE_UP
+
+	 ldi r17, 12
+    rcall MOVE_RIGHT
+
+
+
+
+
+
+	rcall PEN_DOWN
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 2
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 2
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_up
+
+	 ldi r17, 3
+    rcall MOVE_RIGHT
+
+	ldi r17, 2
+	rcall MOVE_DOWN
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 2
+	rcall MOVE_DOWN
+
+
+
+
+
+
+
+
+	 rcall PEN_UP
+
+	 ldi r17, 11
+	rcall MOVE_UP
+
+	 ldi r17, 4
+    rcall MOVE_LEFT
+
+	rcall PEN_DOWN
+
+
+
+	 ldi r17, 2
+    rcall MOVE_LEFT
+
+
+
+	ldi r17, 2
+	rcall MOVE_DOWN
+
+	 ldi r17, 3
+    rcall MOVE_LEFT
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_LEFT
+
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 2
+    rcall MOVE_LEFT
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 2
+    rcall MOVE_RIGHT
+
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 3
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 2
+    rcall MOVE_RIGHT
+
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+
+	ldi r17, 2
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 2
+	rcall MOVE_DOWN
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_LEFT
+
+
+
+
+
+
+
+
+	rcall PEN_UP
+
+	
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+
+
+	 ldi r17, 2
+    rcall MOVE_LEFT
+
+	rcall PEN_DOWN
+
+
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 2
+    rcall MOVE_LEFT
+
+
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 2
+    rcall MOVE_LEFT
+
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 2
+	rcall MOVE_DOWN
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+
+
+
+
+	rcall PEN_UP
+
+
+
+
+	 ldi r17, 5
+    rcall MOVE_LEFT
+
+	rcall PEN_DOWN
+
+
+
+
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 2
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 2
+	rcall MOVE_DOWN
+
+	 ldi r17, 3
+    rcall MOVE_LEFT
+
+
+	ldi r17, 3
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_RIGHT
+
+	ldi r17, 1
+	rcall MOVE_DOWN
+
+	 ldi r17, 4
+    rcall MOVE_RIGHT
+
+	ldi r17, 2
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_LEFT
+
+	ldi r17, 1
+	rcall MOVE_UP
+
+	 ldi r17, 1
+    rcall MOVE_LEFT
+
+
+
+
+
+
+
+
+
+    ret
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
