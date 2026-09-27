@@ -118,7 +118,178 @@ OFFSET_MARGIN:
     ret
 
 
+; FIGURAS
 
+
+; 1: Triángulo
+DRAW_TRIANGLE:
+
+
+
+
+
+
+
+
+
+    rcall PEN_DOWN
+
+    ldi r17, 20
+    rcall MOVE_DN_LT
+
+    ldi r17, 40
+    rcall MOVE_RIGHT
+
+    ldi r17, 20
+    rcall MOVE_UP_LT
+
+    rcall PEN_UP
+    ret
+
+; 2: Círculo
+DRAW_CIRCLE:
+
+
+
+
+
+
+    rcall PEN_DOWN
+
+    ldi r17, 5
+    rcall MOVE_LEFT
+
+    ldi r17, 1
+    rcall MOVE_DN_LT
+
+    ldi r17, 1
+    rcall MOVE_LEFT
+
+    ldi r17, 1
+    rcall MOVE_DOWN
+
+    ldi r17, 1
+    rcall MOVE_LEFT
+
+    ldi r17, 1
+    rcall MOVE_DN_LT
+
+    ldi r17, 1
+    rcall MOVE_DOWN
+
+    ldi r17, 1
+    rcall MOVE_LEFT
+
+    ldi r17, 1
+    rcall MOVE_DOWN
+
+    ldi r17, 1
+    rcall MOVE_DN_LT
+
+; --- primer cuarto- terminado----------------------------------
+
+
+
+    ldi r17, 5
+    rcall MOVE_DOWN
+
+
+    ldi r17, 1
+    rcall MOVE_DN_RT
+
+    ldi r17, 1
+    rcall MOVE_DOWN
+
+    ldi r17, 1
+    rcall MOVE_RIGHT
+
+    ldi r17, 1
+    rcall MOVE_DOWN
+
+    ldi r17, 1
+    rcall MOVE_DN_RT
+
+    ldi r17, 1
+    rcall MOVE_RIGHT
+
+    ldi r17, 1
+    rcall MOVE_DOWN
+
+    ldi r17, 1
+    rcall MOVE_RIGHT
+
+    ldi r17, 1
+    rcall MOVE_DN_RT
+
+    ; --- segundo cuaro terminado----------------------------------------
+
+
+
+    ldi r17, 5
+    rcall MOVE_RIGHT
+
+    ldi r17, 1
+    rcall MOVE_UP_RT
+
+    ldi r17, 1
+    rcall MOVE_RIGHT
+
+    ldi r17, 1
+    rcall MOVE_UP
+
+    ldi r17, 1
+    rcall MOVE_RIGHT
+
+    ldi r17, 1
+    rcall MOVE_UP_RT
+
+    ldi r17, 1
+    rcall MOVE_UP
+
+    ldi r17, 1
+    rcall MOVE_RIGHT
+
+    ldi r17, 1
+    rcall MOVE_UP
+
+    ldi r17, 1
+    rcall MOVE_UP_RT
+
+    ; --- tercer cuaro terminado----------------------------------------
+
+
+    ldi r17, 5
+    rcall MOVE_UP
+
+    ldi r17, 1
+    rcall MOVE_UP_LT
+
+    ldi r17, 1
+    rcall MOVE_UP
+
+    ldi r17, 1
+    rcall MOVE_LEFT
+
+    ldi r17, 1
+    rcall MOVE_UP
+
+    ldi r17, 1
+    rcall MOVE_UP_LT
+
+    ldi r17, 1
+    rcall MOVE_LEFT
+
+    ldi r17, 1
+    rcall MOVE_UP
+
+    ldi r17, 1
+    rcall MOVE_LEFT
+
+    ldi r17, 1
+    rcall MOVE_UP_LT
+
+    rcall PEN_UP
+    ret
 
 
 
