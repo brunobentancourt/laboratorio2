@@ -1,0 +1,42 @@
+ISR_PCINT0:
+    in TEMP, PINB
+    sbrc TEMP, PB0
+    reti
+
+    cpi ESTADO, EST_CERRANDO
+    breq INVERTIR_A_ABRIR
+
+    cpi ESTADO, EST_ABRIENDO
+    breq INVERTIR_A_CERRAR
+
+    reti
+
+INVERTIR_A_ABRIR:
+    cbi PORTB, PB2
+    sbi PORTB, PB1
+    sbi PORTB, PB3
+    ldi ESTADO, EST_ABRIENDO
+
+    ldi ZL, LOW(MSG_OBSTACULO * 2)
+    ldi ZH, HIGH(MSG_OBSTACULO * 2)
+    rcall TRANSMIT_STRING
+
+    ldi ZL, LOW(MSG_REVERSA_ABRIR * 2)
+    ldi ZH, HIGH(MSG_REVERSA_ABRIR * 2)
+    rcall TRANSMIT_STRING
+    reti
+
+INVERTIR_A_CERRAR:
+    cbi PORTB, PB1
+    sbi PORTB, PB2
+    sbi PORTB, PB3
+    ldi ESTADO, EST_CERRANDO
+
+    ldi ZL, LOW(MSG_OBSTACULO * 2)
+    ldi ZH, HIGH(MSG_OBSTACULO * 2)
+    rcall TRANSMIT_STRING
+
+    ldi ZL, LOW(MSG_REVERSA_CERRAR * 2)
+    ldi ZH, HIGH(MSG_REVERSA_CERRAR * 2)
+    rcall TRANSMIT_STRING
+    reti
